@@ -24,10 +24,17 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    padding: 150px;
+    font-size: 2rem;
+    width: 100%;
+    
+}
+label {
+    justify-content: center;
 }
 
 section {
@@ -47,10 +54,13 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    font-size: 3rem;
+    text-decoration: underline;
+    text-transform: capitalize;
 }
 
 footer {
@@ -66,13 +76,9 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
 
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
+
+
 
 header img {
     height: var(--header-height);
@@ -93,21 +99,19 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
+button {
+    height: 50px;
+    width: 75px;
+}
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
+ .score-section {
+     font-size: .5rem;
+     text-transform: bold;
+     padding: 15px;
 
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+ }
+ span {
+     border: solid 2px black;
+ }
 
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
 
-  }
