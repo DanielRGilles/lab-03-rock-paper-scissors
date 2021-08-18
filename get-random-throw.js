@@ -13,9 +13,7 @@ export function computersThrow() {
 
 
 export function whoWon(userThrow, compThrow) {
-    if (userThrow.value === compThrow.value) {
-        return 'draw';
-    } else if (userThrow.value === 'Paper' && compThrow.value === 'Rock') {
+    if (userThrow.value === 'Paper' && compThrow.value === 'Rock') {
         return 'win';
     }
     else if (userThrow.value === 'Paper' && compThrow.value === 'Scissors') {
@@ -35,6 +33,8 @@ export function whoWon(userThrow, compThrow) {
     }
     else if (userThrow.value === 'Scissors' && compThrow.value === 'Paper') {
         return 'win';
+    } else {
+        return 'draw';
     }
     
 }
