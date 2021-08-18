@@ -15,6 +15,13 @@
     3. score section to diplay results
     4. header for title
 
-
+## grab dom elements
+    1. ids for html elements
 ## state
-    1. 
+    1. number of wins/losses
+    
+## events
+    1. click button
+        get userSelectedThrow.value 
+        get computer generated value getRandomThrow
+        compare values and determine winner via compareThrow function
