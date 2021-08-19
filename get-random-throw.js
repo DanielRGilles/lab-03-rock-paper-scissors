@@ -13,28 +13,26 @@ export function computersThrow() {
 
 
 export function whoWon(userThrow, compThrow) {
-    if (userThrow.value === 'Paper' && compThrow.value === 'Rock') {
+    if (userThrow === 'Paper' && compThrow === 'Rock') {
         return 'win';
     }
-    else if (userThrow.value === 'Paper' && compThrow.value === 'Scissors') {
+    else if (userThrow === 'Paper' && compThrow === 'Scissors') {
         return 'lose';
 
     }
-    else if (userThrow.value === 'Rock' && compThrow.value === 'Paper') {
+    else if (userThrow === 'Rock' && compThrow === 'Paper') {
         return 'lose';
     } 
-    else if (userThrow.value === 'Rock' && compThrow.value === 'Scissors') {
+    else if (userThrow === 'Rock' && compThrow === 'Scissors') {
         return 'win';
 
     }
-    else if (userThrow.value === 'Scissors' && compThrow.value === 'Rock') {
+    else if (userThrow === 'Scissors' && compThrow === 'Rock') {
         return 'lose';
 
     }
-    else if (userThrow.value === 'Scissors' && compThrow.value === 'Paper') {
-        return 'win';
-    } else {
-        return 'draw';
-    }
+    else if (userThrow === 'Scissors' && compThrow === 'Paper') {
+        return 'win';}
     
+    else return 'draw';  
 }

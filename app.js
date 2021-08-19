@@ -20,10 +20,10 @@ let compThrow = null;
 buttonEl.addEventListener('click', () => {
     const userSelectedThrow = document.querySelector('input[type=radio]:checked');
     let userThrow = userSelectedThrow.value;
-//  console.log(userThrow);
+
 
     compThrow = computersThrow();
-// console.log(compThrow);  
+ 
 
     const throwResult = whoWon(userThrow, compThrow);
   
@@ -33,29 +33,17 @@ buttonEl.addEventListener('click', () => {
     } else if (throwResult === 'draw') {
         draws++;
         resultEl.textContent = 'You Draw!';
-    } else if (throwResult === 'lose') {
+    } else { 
         loss++;
-        resultEl.textContent = 'You Lose';
-    }
-  
-        
-  //       
-  //  else if ('draw') {
-        
-  //       resultEl.textContent = 'You Draw!'
-  //     }
-  //     else if ('lose') {
-        
-  //       resultEl.textContent = 'You Lose!'
-  //     }}
-    
+        resultEl.textContent = 'You Lose';}
     lossEl.textContent = wins;
     winsEl.textContent = loss;    
-    drawsEl.textContent = draws;
+    drawsEl.textContent = draws; 
+       
+   
 });
 
 
-  // use user input to update state 
-  // update DOM to reflect the new state
+ 
   
       
