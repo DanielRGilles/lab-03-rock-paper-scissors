@@ -31,6 +31,7 @@ main {
     padding: 150px;
     font-size: 2rem;
     width: 100%;
+    background-color: whitesmoke;
     
 }
 label {
@@ -111,6 +112,7 @@ footer {
     width: 75px;
     cursor: pointer;
     margin-top: 5%;
+    margin-bottom: 2.5%;
 }
 
  #score-section {
@@ -119,6 +121,7 @@ footer {
      padding: 15px;
      border: solid 3px black;
      background-color: rgb(7, 165, 165);
+     margin: 15px;
 
  }
  span {
@@ -144,4 +147,9 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10%;
     background-color:khaki;
+    height: 55%;
+}
+#throw-result {
+    background-color: wheat;
+    border: solid 3px black;
 }

@@ -30,13 +30,13 @@ buttonEl.addEventListener('click', () => {
   
     if (throwResult === 'win') {
         wins++;
-        resultEl.textContent = 'You Win!';
+        resultEl.textContent = `The computer played ${compThrow} and you Win!`;
     } else if (throwResult === 'draw') {
         draws++;
-        resultEl.textContent = 'You Draw!';
+        resultEl.textContent = `The computer played ${compThrow} and You Draw!`;
     } else { 
         loss++;
-        resultEl.textContent = 'You Lose';}
+        resultEl.textContent = `The computer played ${compThrow} and you lost!`}
     lossEl.textContent = wins;
     winsEl.textContent = loss;    
     drawsEl.textContent = draws; 
