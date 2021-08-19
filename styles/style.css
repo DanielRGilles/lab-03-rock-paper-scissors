@@ -24,13 +24,20 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    padding: 150px;
+    font-size: 2rem;
+    width: 100%;
+    
+}
+label {
+    justify-content: center;
 }
 
-section {
+/* section {
     background-color: var(--color5);
     width: 1000px;
     max-width: 80%;
@@ -43,14 +50,17 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
-}
+} */
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    font-size: 3rem;
+    text-decoration: underline;
+    text-transform: capitalize;
 }
 
 footer {
@@ -66,13 +76,16 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
+input {
+    display: none;
 }
 
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
+input[type=radio]:checked + img {
+    border: solid 2px blue;
+    transform: scale(115%);
 }
+
+
 
 header img {
     height: var(--header-height);
@@ -93,21 +106,42 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
+#submit {
+    height: 50px;
+    width: 75px;
+    cursor: pointer;
+    margin-top: 5%;
+}
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
+ #score-section {
+     font-size: 1.5rem;
+     font-weight: 700;
+     padding: 15px;
+     border: solid 3px black;
+     background-color: rgb(7, 165, 165);
 
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+ }
+ span {
+     border: solid 2px black;
+     
+ }
+ #reset-all {
+     height: 100px;
+     width: 150px;
+     cursor: pointer;
+     background-color: rgb(238, 220, 198);
+     border: solid 5px black;
+     border-radius: 5px;
+ }
 
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
+.pic-tures {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.pictures-cnt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+    background-color:khaki;
+}
