@@ -61,13 +61,15 @@ header {
     display: flex;
     justify-content: center;
     background-color: var(--color3);
-    height: var(--header-height);
+    height: 7%;
     box-shadow: var(--shadow);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: underline;
     text-transform: capitalize;
     /* margin-bottom: 15px; */
     width: 100vw;
+    background-color: slategrey;
+    color: ivory;
 }
 
 /* footer {
@@ -95,9 +97,9 @@ input[type=radio]:checked + img {
 
 
 
-header img {
+/* header img {
     height: var(--header-height);
-}
+} */
 
 p {
     margin: var(--gutter);
@@ -115,10 +117,10 @@ footer {
 }
   
 #submit {
-    height: 50px;
-    width: 75px;
+    height: 75px;
+    width: 125px;
     cursor: pointer;
-    margin-top: 5%;
+    margin-top: 5px;
     margin-bottom: 2.5%;
 }
 
