@@ -21,13 +21,8 @@ let compThrow = null;
 buttonEl.addEventListener('click', () => {
     const userSelectedThrow = document.querySelector('input[type=radio]:checked');
     let userThrow = userSelectedThrow.value;
-
-
     compThrow = computersThrow();
- 
-
     const throwResult = whoWon(userThrow, compThrow);
-  
     if (throwResult === 'win') {
         wins++;
         resultEl.textContent = `The computer played ${compThrow} and you Win!`;
@@ -39,18 +34,14 @@ buttonEl.addEventListener('click', () => {
         resultEl.textContent = `The computer played ${compThrow} and you lost!`}
     lossEl.textContent = wins;
     winsEl.textContent = loss;    
-    drawsEl.textContent = draws; 
-       
-   
+    drawsEl.textContent = draws;        
 });
-
 
 amnesiaEl.addEventListener('click', () => {
   // update state
     wins = 0;
     draws = 0;
     loss = 0;
-
   // update view
     winsEl.textContent = '0';
     lossEl.textContent = '0';  
