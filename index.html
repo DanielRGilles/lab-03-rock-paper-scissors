@@ -17,26 +17,29 @@
         <div>Rock, Paper, or Scissors?</div>
     </header>
     <main>
-        <section>
+        <section class="pictures-cnt">
         <label> 
             <input   type="radio" name="hand" value="Rock" checked/>
-            Rock
+            <img class='pic-tures' src="./assets/Dwayne-Johnson-Posing-Rock-Photos.jpg" alt="dwayne the rock johnson">
+            
         </label>
 
         <label>
             <input type="radio" name="hand"  value="Paper" checked/>
-            Paper
+            <img class="pic-tures" src="./assets/paper.jpg" alt="man holding paper">
+            
         </label>
 
 
         <label> 
             <input type="radio" name="hand" value="Scissors" checked/>
-            Scissors
+            <img class='pic-tures' src="./assets/Scissors.jpg" alt="edward scissorhands">
+            
         </label>
     </section>
 
         <button id="submit">submit</button>
-        <div id="throw-result">How'd you do?</div>
+        <div id="throw-result">See what happens</div>
 <section>
         <div id="score-section">
             <div>Wins: <span id="wins-total">0</span></div>
@@ -46,7 +49,7 @@
             
         </div>
 </section>
-   
+   <button id="reset-all">Forget everything you ever thought you knew</button>
    
    
     </main>

@@ -11,6 +11,7 @@ const winsEl = document.querySelector('#loss-total');
 const lossEl = document.querySelector('#wins-total');
 const resultEl = document.querySelector('#throw-result');
 const drawsEl = document.querySelector('#draw-total');
+const amnesiaEl = document.querySelector('#reset-all');
 // initialize global state
 
 let compThrow = null;
@@ -44,6 +45,17 @@ buttonEl.addEventListener('click', () => {
 });
 
 
- 
+amnesiaEl.addEventListener('click', () => {
+  // update state
+    wins = 0;
+    draws = 0;
+    loss = 0;
+
+  // update view
+    winsEl.textContent = '0';
+    lossEl.textContent = '0';  
+    drawsEl.textContent = '0'; 
+    resultEl.textContent = 'Play again?'; 
+}); 
   
       

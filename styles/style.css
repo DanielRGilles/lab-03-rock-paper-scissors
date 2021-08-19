@@ -37,7 +37,7 @@ label {
     justify-content: center;
 }
 
-section {
+/* section {
     background-color: var(--color5);
     width: 1000px;
     max-width: 80%;
@@ -50,7 +50,7 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
-}
+} */
 
 header {
     display: flex;
@@ -76,7 +76,14 @@ h2 {
     font-weight: bold;
 }
 
+input {
+    display: none;
+}
 
+input[type=radio]:checked + img {
+    border: solid 2px blue;
+    transform: scale(115%);
+}
 
 
 
@@ -99,20 +106,42 @@ footer {
     box-shadow: var(--shadow);
 }
   
-button {
+#submit {
     height: 50px;
     width: 75px;
+    cursor: pointer;
+    margin-top: 5%;
 }
 
- .score-section {
-     font-size: .5rem;
-     text-transform: bold;
+ #score-section {
+     font-size: 1.5rem;
+     font-weight: 700;
      padding: 15px;
+     border: solid 3px black;
+     background-color: rgb(7, 165, 165);
 
  }
  span {
      border: solid 2px black;
      
  }
+ #reset-all {
+     height: 100px;
+     width: 150px;
+     cursor: pointer;
+     background-color: rgb(238, 220, 198);
+     border: solid 5px black;
+     border-radius: 5px;
+ }
 
-
+.pic-tures {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.pictures-cnt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+    background-color:khaki;
+}
