@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -13,13 +15,14 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
+    --header-height: 110px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    height: 100vh;
 }
 
 main {
@@ -31,6 +34,8 @@ main {
     padding: 150px;
     font-size: 2rem;
     width: 100%;
+    background-color: whitesmoke;
+    height: 100vh;
     
 }
 label {
@@ -61,28 +66,31 @@ header {
     font-size: 3rem;
     text-decoration: underline;
     text-transform: capitalize;
+    /* margin-bottom: 15px; */
+    width: 100vw;
 }
 
-footer {
+/* footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
-}
+} */
 
 
-h2 {
+/* h2 {
     font-size: 1.8rem;
     font-weight: bold;
-}
+} */
 
 input {
     display: none;
 }
 
 input[type=radio]:checked + img {
-    border: solid 2px blue;
+    border: solid 4px rgb(12, 12, 12);
     transform: scale(115%);
+    transition: ease-in-out;
 }
 
 
@@ -111,6 +119,7 @@ footer {
     width: 75px;
     cursor: pointer;
     margin-top: 5%;
+    margin-bottom: 2.5%;
 }
 
  #score-section {
@@ -119,6 +128,7 @@ footer {
      padding: 15px;
      border: solid 3px black;
      background-color: rgb(7, 165, 165);
+     margin: 15px;
 
  }
  span {
@@ -144,4 +154,10 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10%;
     background-color:khaki;
+    height: 55%;
+}
+#throw-result {
+    background-color: wheat;
+    border: dashed 3px black;
+    border-radius: 5px;
 }
